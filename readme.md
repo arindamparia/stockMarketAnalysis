@@ -1,0 +1,1 @@
+Site is live on https://stockmarketanalysisbyarindam.netlify.app/
