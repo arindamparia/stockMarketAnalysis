@@ -1,0 +1,60 @@
+
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+span{
+    font-size: 20px;
+}
+#waiting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 90vh;
+}
+#chart-timeline{
+    width: 80vw;
+}
+#chartAndStock{
+    display: flex;
+}
+#stockNames{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.stockDetailsDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.stockDetailsDiv button{
+    background-color: greenyellow;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+}
+.toolbar{
+    display: flex;
+    justify-content: center;
+}
+.toolbar button{
+    background-color: greenyellow;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px 10px;
+}
+#stockMin,#stockMax{
+    background-color: chartreuse;
+    width: 450px;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 20px;
+}
