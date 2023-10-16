@@ -1,4 +1,4 @@
-
+// Site is live on https://stockmarketanalysisbyarindam.netlify.app/
 const stocks = ['AAPL' ,'MSFT' ,'GOOGL' ,'AMZN' ,'PYPL', 'TSLA' ,'JPM' ,'NVDA', 'NFLX', 'DIS'];
 async function render() {
     document.getElementById('chart').style.display='none'
@@ -12,7 +12,7 @@ async function render() {
         document.getElementById('chart').style.display='block'
         document.getElementById('waiting').style.display='none'
     }
-    const stockNamesEle = document.getElementById('stockNames')
+    const stockListEle = document.getElementById('stockList')
     let options = {
         series: [{
             name: 'AAPL',
@@ -55,14 +55,6 @@ async function render() {
     };
     let chart = new ApexCharts(document.querySelector("#chart-timeline"), options);
     chart.render();
-    let resetCssClasses = function(activeEl) {
-        let els = document.querySelectorAll('button')
-        Array.prototype.forEach.call(els, function(el) {
-            el.classList.remove('active')
-        })
-
-        activeEl.target.classList.add('active')
-    }
     stocks.forEach(val => {
         const stockDetailsDivEle=document.createElement('div')
         stockDetailsDivEle.classList.add('stockDetailsDiv')
@@ -89,7 +81,7 @@ async function render() {
             })
             // chart.updateSeries([{data: arr, name: val}])
         }
-        stockNamesEle.append(stockDetailsDivEle)
+        stockListEle.append(stockDetailsDivEle)
     })
     document.querySelector('#one_month').onclick = () => {
 
