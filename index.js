@@ -152,8 +152,8 @@ function createChart(stockChartsData,stockStatsData,stockSummary,brand,time) {
     if(stockStatsData.stocksStatsData[0][`${brand}`].profit>0)document.getElementById('profit').style.color='green'
     else document.getElementById('profit').style.color='red'
     document.getElementById('stockSummary').textContent=stockSummary.stocksProfileData[0][`${brand}`].summary
-    document.getElementById('stockMin').textContent=`Minimum Price in the selected duration= $${minVal}`
-    document.getElementById('stockMax').textContent=`Maximum Price in the selected duration= $${maxVal}`
+    document.getElementById('stockMin').textContent=`Low value in the selected period of time= $${minVal}`
+    document.getElementById('stockMax').textContent=`Peak value in the selected period of time= $${maxVal}`
     return dataArr
 }
 render()
